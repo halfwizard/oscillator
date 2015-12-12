@@ -1,0 +1,15 @@
+{
+  "name": "oscillator",
+  "version": "1.0.0",
+  "description": "Oscillator Sound Progam",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "halfwizard",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0"
+  }
+}
