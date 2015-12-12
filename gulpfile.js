@@ -1,7 +1,8 @@
 "use strict";
 
 var gulp = require('gulp'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    sass = require('gulp-sass');
     
 gulp.task("concatScripts", function(){
   return gulp.src([
@@ -14,3 +15,8 @@ gulp.task("concatScripts", function(){
   .pipe(gulp.dest('public/'));
 });
 
+gulp.task("compileSass", function(){
+  return gulp.src('src/scss/style.scss')
+  .pipe(sass())
+  .pipe(gulp.dest('public/'));
+});
